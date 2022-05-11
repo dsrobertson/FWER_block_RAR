@@ -141,7 +141,7 @@ p2m = 1 - pnorm(T2m*(1/n2 + 1/n0)^(-1/2))
 # H_2 = T2m > c2
 
 
-#####  EG test for H_I #####
+#####  New test for H_I #####
 
 # I = {1}
 
