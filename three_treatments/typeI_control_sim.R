@@ -6,7 +6,7 @@
 source('BAR.R')
 source('rassign2.R')
 source('wT_calc_EG.R')
-source('WT_calc.R')
+source('wT_calc.R')
 
 rdu = function(n,k) sample(1:k,n,replace=TRUE)
 
@@ -96,7 +96,7 @@ gamma_pow = 0.5
 
 ################ Run simulation ################ 
 
-# set.seed(7)
+set.seed(7)
 
 for (i in 1:N) {
   
