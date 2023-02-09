@@ -136,7 +136,6 @@ if(alloc_scheme == 'inflator') {
   
 }
 
-
 ##### Calculate weights and modified z-statistic #####
 
 T1mEG = weight_calc_EG(a, b, D, D0, X, X0, r, 1)
@@ -150,7 +149,6 @@ T1m = weight_calc(a, b1, D, D0, X, X0, r, 1)
 T2m = weight_calc(a, b2, D, D0, X, X0, r, 2)
 
 
-
 # Treatment 1
 
 n1 = sum(a == 1)   # Number of patients on treatment 1
@@ -158,13 +156,11 @@ n1 = sum(a == 1)   # Number of patients on treatment 1
 T1m$TI/((1/n1 + 1/n0)^(1/2))   # RW test statistic
 T1mEG$Utilde   # New test statistic
 
-
 T1m$wI   # RW weights for experimental treatment 1
 T1mEG$wI[2:4]   # New weights for experimental treatment 1
 
 T1m$w0   # RW weights for control
 T1mEG$w0   # New weights for control
-
 
 
 # Treatment 2
@@ -174,10 +170,8 @@ n2 = sum(a == 2)   # # Number of patients on treatment 2
 T2m$TI/((1/n2 + 1/n0)^(1/2))   # RW test statistic
 T2mEG$Utilde   # New test statistic
 
-
 T2m$wI   # RW weights for experimental treatment 2
 T2mEG$wI[2:4]
-
 
 T2m$w0   # RW weights for control
 T2mEG$w0   # New weights for control
