@@ -1,4 +1,4 @@
-wT_calc_EG = function(a, b, D, D0, X, X0, r, Iset) {
+weight_calc_EG = function(a, b, D, D0, X, X0, r, Iset) {
   
   J = length(D)-1
   n0 = length(X0)
